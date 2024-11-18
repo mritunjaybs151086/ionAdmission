@@ -1,0 +1,37 @@
+[
+  {
+    "path": "/",
+    "name": "Home",
+    "component": "Home",
+    "icon": "home",
+    "isProtected": false,
+    "permissions": [],
+    "submenu": []
+  },
+  {
+    "path": "/products",
+    "name": "Products",
+    "component": "Products",
+    "icon": "box",
+    "isProtected": true,
+    "permissions": ["VIEW_PRODUCTS"],
+    "submenu": [
+      {
+        "path": "/products/new",
+        "name": "Add Product",
+        "component": "AddProduct",
+        "isProtected": true,
+        "permissions": ["ADD_PRODUCT"]
+      }
+    ]
+  },
+  {
+    "path": "/settings",
+    "name": "Settings",
+    "component": "Settings",
+    "icon": "settings",
+    "isProtected": true,
+    "permissions": ["MANAGE_SETTINGS"],
+    "submenu": []
+  }
+]
